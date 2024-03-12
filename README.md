@@ -1,0 +1,1 @@
+# Python-Bash-Script-for-Data-Dictionary-.XLSX-validation-with-Postgres-Data-Warehouse
