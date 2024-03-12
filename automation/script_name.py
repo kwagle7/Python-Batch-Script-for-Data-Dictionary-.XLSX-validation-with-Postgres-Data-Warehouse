@@ -29,7 +29,7 @@ def field_exists_in_schema(cursor, schema_name, table_name, field_name):
 
 # Custom function for case-insensitive schema name conversion
 def convert_to_valid_schema(user_input):
-    valid_schemas = ["Common", "Finance", "HR", "ML", "Maintenance", "Production", "Supply", "public"]
+    valid_schemas = [ "HumRes", "Finance", "Production", "Supply", "Test"]
     lowercased_input = user_input.lower()
     
     for schema in valid_schemas:
@@ -42,7 +42,7 @@ def convert_to_valid_schema(user_input):
 # Connect to PostgreSQL
 try:
     # Prompt user for the schema and convert to valid format
-    user_schema = convert_to_valid_schema(input("Enter the table schema e.g Finance: "))
+    user_schema = convert_to_valid_schema(input("Enter the table schema e.g Finance, HumRes: "))
 
 
     # Open file dialog to select Excel file
