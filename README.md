@@ -15,7 +15,7 @@ Enter the password for your database.
 Enter the name of the schema you want to be in.
 
 **Step 5:**
-Save the report in your desired location (give the report name, e.g., `supply_report`).
+Save the report in your desired location (give the report name, e.g., `HumRes_report`).
 
 It will save the report.
 
