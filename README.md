@@ -1,4 +1,4 @@
-# Python-Bash-Script-for-Data-Dictionary-.XLSX-validation-with-Postgres-Data-Warehouse
+# Python-Batch-Script-for-Data-Dictionary-.XLSX-validation-with-Postgres-Data-Warehouse
 
 # TLDR: Quick Steps:
 
