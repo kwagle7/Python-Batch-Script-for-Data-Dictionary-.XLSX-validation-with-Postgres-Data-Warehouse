@@ -77,7 +77,7 @@ try:
             for row in sheet.iter_rows(min_row=2, values_only=True):
                 cell_value = row[0].strip() if row[0] else None
 
-                if cell_value and cell_value.startswith("v_"):
+                if cell_value and cell_value.startswith("view_"):
                     table_name = cell_value
                     skip_table_description = True
                     continue
@@ -91,7 +91,7 @@ try:
 
                 if table_name and cell_value:
                     field_name = cell_value.strip()
-                    if table_name.startswith("v_"):
+                    if table_name.startswith("view_"):
                         category_list = views
                         excel_tables_and_fields.add((table_name, field_name))
                     else:
@@ -120,7 +120,7 @@ try:
 
         # Print missing tables and fields for views in alphabetical order
         missing_tables_and_fields = sorted(
-            [item for item in missing_tables_and_fields if item[0].startswith("v_")],
+            [item for item in missing_tables_and_fields if item[0].startswith("view_")],
             key=lambda x: (x[0], x[1])
         )
         print("\n\033[94mMissing Tables and Fields:\033[0m")
